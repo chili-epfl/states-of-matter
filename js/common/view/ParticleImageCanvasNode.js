@@ -22,7 +22,7 @@ define( function( require ) {
   var StatesOfMatterConstants = require( 'STATES_OF_MATTER/common/StatesOfMatterConstants' );
 
   // constants
-  var PARTICLE_IMAGE_CANVAS_LENGTH = 32; // amount of canvas used to create a particle image, will be squared 
+  var PARTICLE_IMAGE_CANVAS_LENGTH = 32; // amount of canvas used to create a particle image, will be squared
 
   // set up the association between atom types and the colors used to represent them
   var PARTICLE_COLOR_TABLE = {};
@@ -140,8 +140,8 @@ define( function( require ) {
         PARTICLE_IMAGE_CANVAS_LENGTH,
         this.modelViewTransform.modelToViewX( particle.positionProperty.value.x ) - particleViewRadius,
         this.modelViewTransform.modelToViewY( particle.positionProperty.value.y ) - particleViewRadius,
-        particleViewRadius * 2,
-        particleViewRadius * 2
+        particleViewRadius * 4.0,//4.0//3.0//3.0//2.4//2.4//2.4
+        particleViewRadius * 4.0 //4.0//3.0//3.0//2.4//2.4//2.4
       );
     },
 

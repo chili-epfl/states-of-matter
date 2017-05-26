@@ -21,7 +21,7 @@ define( function( require ) {
 
   var StatesOfMatterColorProfile = new ColorProfile( {
     background: {
-      default: 'black',
+      default: 'white',
       projector: 'white'
     },
     controlPanelBackground: {
@@ -53,4 +53,3 @@ define( function( require ) {
 
   return StatesOfMatterColorProfile;
 } );
-

@@ -16,7 +16,7 @@ define( function( require ) {
   var statesOfMatter = require( 'STATES_OF_MATTER/statesOfMatter' );
 
   // constants (these are vars because other constants refer to them)
-  var SOLID_TEMPERATURE = 0.01;//0.15;
+  var SOLID_TEMPERATURE = 0.01;//0.01;//0.2;//0.55;//0.6;//2.0;//6.0;
   var NEON_ATOM_EPSILON = 32.8; // epsilon/k-Boltzmann is in Kelvin.
 
   var StatesOfMatterConstants  = {
@@ -68,7 +68,7 @@ define( function( require ) {
     NEON_COLOR: Element.Ne.color,
     ARGON_COLOR: Element.Ar.color,
     HYDROGEN_COLOR: Element.H.color,
-    ADJUSTABLE_ATTRACTION_COLOR: '#FFFFFF',//'#CC66CC',
+    ADJUSTABLE_ATTRACTION_COLOR: '#000000',//'#CC66CC',
 
     // adjustable attraction min epsilon
     MIN_ADJUSTABLE_EPSILON: ( 1.5 * NEON_ATOM_EPSILON ),

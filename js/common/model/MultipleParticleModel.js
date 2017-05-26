@@ -67,7 +67,7 @@ define( function( require ) {
   // constants related to how time steps are handled
   var NOMINAL_FRAME_RATE = 60; // in frames per second
   var NOMINAL_TIME_STEP = 1 / NOMINAL_FRAME_RATE;
-  var PARTICLE_SPEED_UP_FACTOR = 4; // empirically determined to make the particles move at a speed that looks reasonable
+  var PARTICLE_SPEED_UP_FACTOR = 1; // empirically determined to make the particles move at a speed that looks reasonable
   var MAX_PARTICLE_MOTION_TIME_STEP = 0.025; // max time step that model can handle, empirically determined
 
   // constants that define the normalized temperatures used for the various states
@@ -1163,7 +1163,7 @@ define( function( require ) {
 
       // Initialize the number of atoms assuming that the solid form, when made into a square, will consume about 1/3
       // the width of the container.
-      var numberOfAtoms = Math.pow( Math.round( PARTICLE_CONTAINER_WIDTH / ( ( particleDiameter * 1.05 ) * 3 ) ), 2 );
+      var numberOfAtoms = 20;//Math.pow( Math.round( PARTICLE_CONTAINER_WIDTH / ( ( particleDiameter * 1.05 ) * 3 ) ), 2 );
 
       // Create the normalized data set for the one-atom-per-molecule case.
       this.moleculeDataSet = new MoleculeForceAndMotionDataSet( 1 );
