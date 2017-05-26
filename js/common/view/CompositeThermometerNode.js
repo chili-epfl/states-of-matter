@@ -63,7 +63,8 @@ define( function( require ) {
       bulbDiameter: 23,
       lineWidth: 1.4,
       tubeWidth: 13,
-      tubeHeight: 65
+      tubeHeight: 65,
+      opacity: 0.0
     } );
 
     // @private temperature nodes combo box

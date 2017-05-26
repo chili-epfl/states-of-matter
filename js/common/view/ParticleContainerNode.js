@@ -90,6 +90,7 @@ define( function( require ) {
     preParticleLayer.addChild( new Path( topEllipseShape, {
       lineWidth: 1,
       stroke: '#444444',
+      opacity: 0.0,
       centerX: this.particleAreaViewBounds.centerX,
       centerY: this.particleAreaViewBounds.minY
     } ) );
@@ -97,6 +98,7 @@ define( function( require ) {
     // create and add the node that will act as the elliptical background for the lid, other nodes may be added later
     var containerLid = new Path( topEllipseShape, {
       fill: 'rgba( 126, 126, 126, 0.8 )',
+      opacity: 0.0,
       centerX: this.particleAreaViewBounds.centerX
     } );
     postParticleLayer.addChild( containerLid );
@@ -114,6 +116,7 @@ define( function( require ) {
       var handleAreaEllipse = new Path( handleAreaEllipseShape, {
         lineWidth: 1,
         stroke: '#888888',
+        opacity: 0.0,
         fill: 'rgba( 200, 200, 200, 0.5 )',
         centerX: containerLid.width / 2,
         centerY: 0
@@ -213,7 +216,8 @@ define( function( require ) {
           .addColorStop( 0.75, '#8E8E8E' )
           .addColorStop( 0.8, '#737373' )
           .addColorStop( 0.9, '#646565' ),
-        opacity: 0.9,
+        //opacity: 0.9,
+        opacity: 0.0,
         centerX: this.particleAreaViewBounds.centerX,
         top: this.particleAreaViewBounds.minY
       }
@@ -231,6 +235,7 @@ define( function( require ) {
         .lineTo( 0, 0 )
         .close(),
       {
+        opacity: 0.0,
         fill: new LinearGradient( 0, 0, 0, cutoutHeight )
           .addColorStop( 0, '#525252' )
           .addColorStop( 0.3, '#515151' )
@@ -252,6 +257,7 @@ define( function( require ) {
         .lineTo( 0, BEVEL_WIDTH )
         .close(),
       {
+        opacity: 0.0,
         left: cutoutWidth - BEVEL_WIDTH,
         fill: new LinearGradient( 0, 0, 0, cutoutHeight )
           .addColorStop( 0, '#8A8A8A' )
@@ -273,6 +279,7 @@ define( function( require ) {
         .lineTo( 0, 0 )
         .close(),
       {
+        opacity: 0.0,
         lineWidth: 0,
         stroke: 'white',
         fill: new LinearGradient( 0, 0, cutoutWidth, 0 )
@@ -295,6 +302,7 @@ define( function( require ) {
         .lineTo( BEVEL_WIDTH, 0 )
         .close(),
       {
+        opacity: 0.0,
         top: cutoutHeight - BEVEL_WIDTH,
         fill: new LinearGradient( 0, 0, cutoutWidth, 0 )
           .addColorStop( 0, '#5D5D5D' )

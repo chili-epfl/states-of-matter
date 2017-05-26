@@ -56,7 +56,7 @@ define( function( require ) {
   var DEFAULT_SUBSTANCE = SubstanceType.NEON;
   var MAX_TEMPERATURE = 50.0;
   var MIN_TEMPERATURE = 0.00001;
-  var NOMINAL_GRAVITATIONAL_ACCEL = -0.045;
+  var NOMINAL_GRAVITATIONAL_ACCEL = -0.045; ///
   var TEMPERATURE_CHANGE_RATE = 0.07; // empirically determined to make temperate change at a reasonable rate
   var INJECTED_MOLECULE_VELOCITY = 2.0; // in normalized model units per second, empirically determined to look reasonable
   var INJECTED_MOLECULE_ANGLE_SPREAD = Math.PI * 0.25; // in radians, empirically determined to look reasonable

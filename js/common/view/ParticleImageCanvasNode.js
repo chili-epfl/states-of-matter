@@ -131,7 +131,7 @@ define( function( require ) {
      * @private
      */
     renderParticle: function( context, particle ) {
-      var particleViewRadius = this.particleRadii[ particle.getType() ];
+      var particleViewRadius = this.particleRadii[ particle.getType() ]/2;
       context.drawImage(
         this.particleImageCanvas,
         this.mapAtomTypeToImageXPosition[ particle.getType() ],
