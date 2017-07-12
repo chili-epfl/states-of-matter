@@ -18,7 +18,7 @@ define( function( require ) {
 
   // constants
   var DEFAULT_INTERACTION_POTENTIAL = StatesOfMatterConstants.MAX_EPSILON / 2;
-  var DEFAULT_RADIUS = 300;//300;//400;//400;//500;//500;//500; // in picometers
+  var DEFAULT_RADIUS = 500;//300;//400;//400;//500;//500;//500; // in picometers
   var MASS = 25; // in atomic mass units
 
   /**

@@ -16,7 +16,7 @@ define( function( require ) {
   var statesOfMatter = require( 'STATES_OF_MATTER/statesOfMatter' );
 
   // constants (these are vars because other constants refer to them)
-  var SOLID_TEMPERATURE = 0.01;//0.01;//0.2;//0.55;//0.6;//2.0;//6.0;
+  var SOLID_TEMPERATURE = 10.0;//0.01;//0.2;//0.55;//0.6;//2.0;//6.0;
   var NEON_ATOM_EPSILON = 32.8; // epsilon/k-Boltzmann is in Kelvin.
 
   var StatesOfMatterConstants  = {

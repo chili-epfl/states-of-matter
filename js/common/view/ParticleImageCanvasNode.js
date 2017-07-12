@@ -140,8 +140,8 @@ define( function( require ) {
         PARTICLE_IMAGE_CANVAS_LENGTH,
         this.modelViewTransform.modelToViewX( particle.positionProperty.value.x ) - particleViewRadius,
         this.modelViewTransform.modelToViewY( particle.positionProperty.value.y ) - particleViewRadius,
-        particleViewRadius * 4.0,//4.0//3.0//3.0//2.4//2.4//2.4
-        particleViewRadius * 4.0 //4.0//3.0//3.0//2.4//2.4//2.4
+        particleViewRadius * 2.4,//4.0//3.0//3.0//2.4//2.4//2.4
+        particleViewRadius * 2.4 //4.0//3.0//3.0//2.4//2.4//2.4
       );
     },
 
